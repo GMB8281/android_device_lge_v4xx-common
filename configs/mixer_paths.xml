@@ -1267,4 +1267,10 @@
 		<ctl name="DEC1 Volume" value="60" />
 		<ctl name="ADC2 Volume" value="12" />
     </path>
+	    <!-- Paths dummy para evitar que o audio_route trave o HAL -->
+    <path name="echo-reference">
+    </path>
+    <path name="low-latency-record">
+        <path name="audio-record" />
+    </path>
 </mixer>
