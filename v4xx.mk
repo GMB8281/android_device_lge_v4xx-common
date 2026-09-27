@@ -123,6 +123,10 @@ PRODUCT_PACKAGES += \
     libcamera_parameters_shim \
     libshim_atomic
 
+# Camera shim para blob do KitKat
+PRODUCT_PACKAGES += \
+    libshim_camera
+
 # Display
 PRODUCT_PACKAGES += \
     android.hardware.graphics.allocator@2.0-impl \
