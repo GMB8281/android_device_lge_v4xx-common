@@ -16,12 +16,11 @@ LOCAL_SHARED_LIBRARIES := \
     libsensor \
     libutils \
     android.hidl.token@1.0-utils \
+    libshim_camera\
     android.hardware.graphics.bufferqueue@1.0
 
 LOCAL_STATIC_LIBRARIES := \
     libarect libbase
-
-LOCAL_REQUIRED_MODULES += libshim_camera
 
 LOCAL_MODULE_RELATIVE_PATH := hw
 LOCAL_MODULE := camera.$(TARGET_BOARD_PLATFORM)
