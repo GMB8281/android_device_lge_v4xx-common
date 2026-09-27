@@ -16,7 +16,7 @@ LOCAL_SHARED_LIBRARIES := \
     libsensor \
     libutils \
     android.hidl.token@1.0-utils \
-    libshim_camera\
+    libshim_camera \
     android.hardware.graphics.bufferqueue@1.0
 
 LOCAL_STATIC_LIBRARIES := \
