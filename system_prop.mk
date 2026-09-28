@@ -43,9 +43,6 @@ PRODUCT_PROPERTY_OVERRIDES += \
     debug.sf.hw=1 \
     persist.hwc.mdpcomp.enable=true \
     ro.opengles.version=196608 \
-    persist.hwc.mdpcomp.enable=true \
-    persist.hwc.mdpcomp.maxpermixer=2 \
-    debug.sf.enable_gl_client_composition=1 \
     ro.sf.lcd_density=213
 
 # GPS
