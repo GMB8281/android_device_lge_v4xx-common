@@ -81,8 +81,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
 
 # Audio
 PRODUCT_COPY_FILES += \
-    device/lge/v4xx-common/configs/mixer_paths.xml:$(TARGET_COPY_OUT_VENDOR)/etc/mixer_paths.xml \
-    device/lge/v4xx-common/configs/audio_effects.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_effects.xml
+    device/lge/v4xx-common/configs/mixer_paths.xml:$(TARGET_COPY_OUT_VENDOR)/etc/mixer_paths.xml
 
 PRODUCT_PACKAGES += \
     android.hardware.audio@2.0-impl \
@@ -115,13 +114,13 @@ PRODUCT_PACKAGES += \
     libboringssl-compat
 
 # Camera
-#PRODUCT_PACKAGES += \
-#    android.hardware.camera.provider@2.4-impl-legacy \
-#    camera.device@1.0-impl-legacy \
-#    Snap \
-#    camera.msm8226 \
-#    libcamera_parameters_shim \
-#    libshim_atomic
+PRODUCT_PACKAGES += \
+    android.hardware.camera.provider@2.4-impl-legacy \
+    camera.device@1.0-impl-legacy \
+    Snap \
+    camera.msm8226 \
+    libcamera_parameters_shim \
+    libshim_atomic
 
 # Display
 PRODUCT_PACKAGES += \
