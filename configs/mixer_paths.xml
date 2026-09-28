@@ -19,7 +19,6 @@
     <ctl name="Voip Evrc Min Max Rate Config" id="0" value="1" />
     <ctl name="Voip Evrc Min Max Rate Config" id="1" value="4" />
     <ctl name="Voip Dtx Mode" value="0" />
-    <ctl name="TTY Mode" value="Off" />
     <ctl name="LINEOUT1 Volume" value="14" />
     <ctl name="LINEOUT2 Volume" value="14" />
     <ctl name="HPHL Volume" value="14" />
@@ -27,21 +26,16 @@
     <ctl name="RX1 Digital Volume" value="84" />
     <ctl name="RX2 Digital Volume" value="84" />
     <ctl name="RX3 Digital Volume" value="84" />
-    <ctl name="RX4 Digital Volume" value="84" />
     <ctl name="ADC1 Volume" value="19" />
     <ctl name="ADC2 Volume" value="19" />
     <ctl name="ADC3 Volume" value="19" />
     <ctl name="ADC4 Volume" value="19" />
-    <ctl name="ADC5 Volume" value="19" />
     <ctl name="DEC1 Volume" value="84" />
     <ctl name="DEC2 Volume" value="84" />
-    <ctl name="DEC3 Volume" value="84" />
-    <ctl name="DEC4 Volume" value="84" />
     <ctl name="IIR1 INP1 Volume" value="60" /> <!--LGE changed 84==>>60 -->
     <ctl name="IIR1 INP2 Volume" value="60" /> <!--LGE changed 84==>>60 -->
     <ctl name="IIR1 INP3 Volume" value="60" /> <!--LGE changed 84==>>60 -->
     <ctl name="IIR1 INP4 Volume" value="60" /> <!--LGE changed 84==>>60 -->
-    <ctl name="COMP0 Switch" value="0" />
     <ctl name="COMP1 Switch" value="0" />
     <ctl name="COMP2 Switch" value="0" />
     <ctl name="SLIMBUS_3_RX Port Mixer MI2S_TX" value="0" />
@@ -832,7 +826,6 @@
     </path>
 
     <path name="anc">
-        <ctl name="ADC5 Volume" value="7" />
         <ctl name="ADC4 Volume" value="7" />
     </path>
 
@@ -847,7 +840,6 @@
     <path name="speaker-and-anc-headphones">
         <path name="anc-headphones" />
         <ctl name="SPK DAC Switch" value="1" />
-        <ctl name="COMP0 Switch" value="1" />
     </path>
 
     <path name="speaker-and-anc-headphones-skuf">
@@ -866,7 +858,6 @@
     <path name="speaker-and-anc-fb-headphones">
         <path name="anc-fb-headphones" />
         <ctl name="SPK DAC Switch" value="1" />
-        <ctl name="COMP0 Switch" value="1" />
     </path>
 
     <path name="speaker-and-anc-fb-headphones-skuf">
@@ -1035,22 +1026,18 @@
     </path>
 
     <path name="voice-tty-full-headphones">
-        <ctl name="TTY Mode" value="FULL" />
         <path name="tty-headphones" />
     </path>
 
     <path name="voice-tty-vco-headphones">
-        <ctl name="TTY Mode" value="VCO" />
         <path name="tty-headphones" />
     </path>
 
     <path name="voice-tty-full-headphones-lite">
-        <ctl name="TTY Mode" value="FULL" />
         <path name="tty-headphones-lite" />
     </path>
 
     <path name="voice-tty-vco-headphones-lite">
-        <ctl name="TTY Mode" value="VCO" />
         <path name="tty-headphones-lite" />
     </path>
 
@@ -1063,7 +1050,6 @@
     </path>
 
     <path name="voice-tty-hco-handset">
-        <ctl name="TTY Mode" value="HCO" />
         <path name="handset" />
         <ctl name="EAR PA Gain" value="POS_6_DB" />
     </path>
