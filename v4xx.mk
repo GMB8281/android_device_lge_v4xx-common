@@ -115,13 +115,13 @@ PRODUCT_PACKAGES += \
     libboringssl-compat
 
 # Camera
-PRODUCT_PACKAGES += \
-    android.hardware.camera.provider@2.4-impl-legacy \
-    camera.device@1.0-impl-legacy \
-    Snap \
-    camera.msm8226 \
-    libcamera_parameters_shim \
-    libshim_atomic
+#PRODUCT_PACKAGES += \
+#    android.hardware.camera.provider@2.4-impl-legacy \
+#    camera.device@1.0-impl-legacy \
+#    Snap \
+#    camera.msm8226 \
+#    libcamera_parameters_shim \
+#    libshim_atomic
 
 # Display
 PRODUCT_PACKAGES += \
