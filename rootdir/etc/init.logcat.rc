@@ -1,0 +1,14 @@
+# Servico para salvar logcat em /cache/logcat.txt desde o boot
+service logcat /system/bin/logcat -b all -v threadtime -f /cache/logcat.txt
+    class main
+    user root
+    group root log
+    disabled
+
+# Inicia o logcat assim que o sistema comecar a subir
+on boot
+    start logcat
+
+# Tambem garante que o logcat rode se o boot completar
+on property:sys.boot_completed=1
+    start logcat
